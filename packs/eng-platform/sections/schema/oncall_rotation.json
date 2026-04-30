@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "required": ["_meta", "data"],
+  "properties": {
+    "_meta": { "type": "object" },
+    "data": {
+      "type": "object",
+      "required": ["primary"],
+      "properties": {
+        "primary": { "type": "string" },
+        "secondary": { "type": "string" },
+        "rotation_id": { "type": "string" }
+      }
+    }
+  }
+}

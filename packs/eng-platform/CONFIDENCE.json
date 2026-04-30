@@ -1,0 +1,14 @@
+{
+  "auto_merge_threshold": 0.85,
+  "high_risk_threshold_bump": { "sections": ["corrections", "service_owners"], "threshold": 0.95 },
+  "stability_sensitive_sections": ["service_owners"],
+  "expected_delta_per_cycle": {
+    "daily": { "max_changed_keys": 5 },
+    "hourly_business_hours": { "max_changed_keys": 3 },
+    "weekly": { "max_changed_keys": 3 }
+  },
+  "item_count_tolerance": {
+    "active_incidents": { "max_delta_pct": 100 },
+    "feature_flags": { "max_delta_pct": 30 }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://outtolunch-engine/briefing.schema.meta.json",
+  "title": "Briefing schema meta-schema",
+  "description": "Constraints every pack's briefing.schema.json must satisfy. Permissive on purpose.",
+  "type": "object",
+  "required": ["type", "required", "properties"],
+  "properties": {
+    "type": { "const": "object" },
+    "required": {
+      "type": "array",
+      "contains": { "const": "_meta" }
+    },
+    "properties": {
+      "type": "object",
+      "required": ["_meta"],
+      "properties": {
+        "_meta": { "type": "object" }
+      },
+      "not": {
+        "anyOf": [
+          { "required": ["_pack"] },
+          { "required": ["_integrity"] }
+        ]
+      }
+    }
+  }
+}

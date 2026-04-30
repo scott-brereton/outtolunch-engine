@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "required": ["_meta", "data"],
+  "properties": {
+    "_meta": { "type": "object" },
+    "data": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["company", "churned_at"],
+        "properties": {
+          "company": { "type": "string" },
+          "arr": { "type": "number" },
+          "churned_at": { "type": "string", "format": "date" },
+          "reason": { "type": "string" }
+        }
+      }
+    }
+  }
+}

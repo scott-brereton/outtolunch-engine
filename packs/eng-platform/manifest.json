@@ -1,0 +1,6 @@
+{
+  "name": "Eng Platform Briefing",
+  "description": "Current internal-tech facts for AI agents helping engineers.",
+  "confidence_scoring": "disabled",
+  "staleness_hours": 8
+}

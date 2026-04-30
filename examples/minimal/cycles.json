@@ -1,0 +1,10 @@
+{
+  "cycles": {
+    "daily": {
+      "description": "Daily refresh.",
+      "depth": "full",
+      "sections": []
+    }
+  },
+  "default_staleness_hours": 24
+}

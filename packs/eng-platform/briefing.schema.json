@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["_meta"],
+  "properties": {
+    "_meta": {
+      "type": "object",
+      "required": ["generated_at", "valid_until", "pack_name", "schema_version"],
+      "properties": {
+        "generated_at": { "type": "string", "format": "date-time" },
+        "valid_until": { "type": "string", "format": "date-time" },
+        "pack_name": { "type": "string" },
+        "schema_version": { "type": "string" }
+      }
+    },
+    "service_owners": { "type": "object" },
+    "oncall_rotation": { "type": "object" },
+    "deploy_status": { "type": "object" },
+    "feature_flags": { "type": "array" },
+    "internal_api_versions": { "type": "object" },
+    "active_incidents": { "type": "array" },
+    "corrections": { "type": "array", "items": { "type": "object", "required": ["wrong", "right"] } }
+  }
+}

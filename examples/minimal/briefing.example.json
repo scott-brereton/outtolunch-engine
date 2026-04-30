@@ -1,0 +1,9 @@
+{
+  "_meta": {
+    "generated_at": "2026-04-30T00:00:00Z",
+    "valid_until": "2026-05-01T00:00:00Z",
+    "pack_name": "Minimal Example",
+    "schema_version": "1.0.0"
+  },
+  "note": "minimal pack — replace this with real content when forking"
+}

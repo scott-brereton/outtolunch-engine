@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "required": ["_meta", "data"],
+  "properties": {
+    "_meta": { "type": "object" },
+    "data": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["title"],
+        "properties": {
+          "title": { "type": "string" },
+          "owner": { "type": "string" },
+          "status": { "type": "string", "enum": ["on_track", "at_risk", "blocked"] }
+        }
+      }
+    }
+  }
+}

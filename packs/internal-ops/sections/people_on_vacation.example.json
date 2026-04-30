@@ -1,0 +1,11 @@
+{
+  "_meta": {
+    "generated_at": "2026-04-30T14:00:00Z",
+    "valid_until": "2026-05-01T14:00:00Z",
+    "schema_version": "1.0.0"
+  },
+  "data": [
+    { "name": "Riley Tan", "role": "VP Engineering", "return_date": "2026-05-06", "reason": "conference" },
+    { "name": "Sam Rivera", "role": "Senior PM", "return_date": "2026-05-10" }
+  ]
+}

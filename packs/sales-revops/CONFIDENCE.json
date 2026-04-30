@@ -1,0 +1,14 @@
+{
+  "auto_merge_threshold": 0.85,
+  "high_risk_threshold_bump": { "sections": ["corrections", "churned_customers"], "threshold": 0.95 },
+  "stability_sensitive_sections": [],
+  "expected_delta_per_cycle": {
+    "daily": { "max_changed_keys": 6 },
+    "hourly_business_hours": { "max_changed_keys": 3 }
+  },
+  "item_count_tolerance": {
+    "new_customers": { "max_delta_pct": 100 },
+    "churned_customers": { "max_delta_pct": 100 },
+    "at_risk_accounts": { "max_delta_pct": 50 }
+  }
+}

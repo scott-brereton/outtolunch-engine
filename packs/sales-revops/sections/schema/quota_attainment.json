@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "required": ["_meta", "data"],
+  "properties": {
+    "_meta": { "type": "object" },
+    "data": {
+      "type": "object",
+      "properties": {
+        "current_quarter": {
+          "type": "object",
+          "required": ["target", "closed", "pct"],
+          "properties": {
+            "target": { "type": "number" },
+            "closed": { "type": "number" },
+            "pct": { "type": "number" }
+          }
+        }
+      }
+    }
+  }
+}

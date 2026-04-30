@@ -1,0 +1,6 @@
+{
+  "name": "Sales / RevOps Briefing",
+  "description": "Current pipeline facts for AI agents helping sales teams.",
+  "confidence_scoring": "disabled",
+  "staleness_hours": 12
+}

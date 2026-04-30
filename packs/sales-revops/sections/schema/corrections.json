@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "required": ["_meta", "data"],
+  "properties": {
+    "_meta": { "type": "object" },
+    "data": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["wrong", "right"],
+        "properties": {
+          "wrong": { "type": "string" },
+          "right": { "type": "string" },
+          "context": { "type": "string" }
+        }
+      }
+    }
+  }
+}

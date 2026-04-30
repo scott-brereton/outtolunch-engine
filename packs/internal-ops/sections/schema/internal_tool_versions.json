@@ -1,0 +1,13 @@
+{
+  "type": "object",
+  "required": ["_meta", "data"],
+  "properties": {
+    "_meta": { "type": "object" },
+    "data": {
+      "type": "object",
+      "patternProperties": {
+        "^[a-z0-9_]+$": { "type": "string" }
+      }
+    }
+  }
+}

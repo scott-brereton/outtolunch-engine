@@ -1,0 +1,33 @@
+name = "internal-ops-briefing"
+main = "worker/index.ts"
+compatibility_date = "2025-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Optional auth validation. Pick one mode.
+# [vars]
+# AUTH_MODE = "cloudflare_access"
+# ACCESS_TEAM_DOMAIN = "your-team.cloudflareaccess.com"
+# ACCESS_AUD = "your-access-application-aud-tag"
+# AUTH_ALLOWED_DOMAINS = "acme.org"
+#
+# AUTH_MODE = "oidc_jwt"
+# OIDC_ISSUER = "https://issuer.example.com"
+# OIDC_AUDIENCE = "your-api-audience-or-client-id"
+# AUTH_ALLOWED_DOMAINS = "acme.org"
+#
+# AUTH_MODE = "static_bearer"
+# Set AUTH_TOKEN with: wrangler secret put AUTH_TOKEN
+
+[[kv_namespaces]]
+binding = "FEEDBACK"
+id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+
+# Optional: bind Analytics Engine for request logging
+# [[analytics_engine_datasets]]
+# binding = "ANALYTICS"
+# dataset = "internal_ops_requests"
+
+# Optional: route to your own domain
+# [[routes]]
+# pattern = "briefing.acme.internal/*"
+# zone_name = "acme.internal"

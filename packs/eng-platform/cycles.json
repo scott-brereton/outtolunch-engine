@@ -1,0 +1,20 @@
+{
+  "cycles": {
+    "daily": {
+      "description": "Daily refresh of stable platform state.",
+      "depth": "full",
+      "sections": ["service_owners", "oncall_rotation", "feature_flags", "internal_api_versions", "corrections"]
+    },
+    "hourly_business_hours": {
+      "description": "Active-state refresh.",
+      "depth": "update",
+      "sections": ["active_incidents", "deploy_status"]
+    },
+    "weekly": {
+      "description": "Weekly verification of slow-moving facts.",
+      "depth": "verify",
+      "sections": ["internal_api_versions", "service_owners"]
+    }
+  },
+  "default_staleness_hours": 8
+}

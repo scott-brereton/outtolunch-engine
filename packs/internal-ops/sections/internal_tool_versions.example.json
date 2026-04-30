@@ -1,0 +1,13 @@
+{
+  "_meta": {
+    "generated_at": "2026-04-30T14:00:00Z",
+    "valid_until": "2026-05-01T14:00:00Z",
+    "schema_version": "1.0.0"
+  },
+  "data": {
+    "atlas_payments_sdk": "4.1.2",
+    "mobilekit": "4.2.0",
+    "auth_proxy": "2.7.0",
+    "deploy_cli": "1.8.3"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "_meta": {
+    "generated_at": "2026-04-30T14:00:00Z",
+    "valid_until": "2026-05-01T14:00:00Z",
+    "schema_version": "1.0.0"
+  },
+  "data": [
+    { "wrong": "Sarah Chen is the CTO", "right": "Sarah Chen departed 2026-02-10. The current CTO is Alex Park.", "context": "leadership transition" },
+    { "wrong": "mobilekit v3 is current", "right": "mobilekit v4.2 is current; v3 deprecated 2025-12.", "context": "SDK upgrade" }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "auto_merge_threshold": 0.85,
+  "high_risk_threshold_bump": { "sections": ["corrections", "leadership"], "threshold": 0.95 },
+  "stability_sensitive_sections": ["leadership"],
+  "expected_delta_per_cycle": {
+    "daily": { "max_changed_keys": 8 },
+    "hourly_business_hours": { "max_changed_keys": 3 },
+    "weekly": { "max_changed_keys": 4 }
+  },
+  "item_count_tolerance": {
+    "people_on_vacation": { "max_delta_pct": 50 },
+    "active_incidents": { "max_delta_pct": 100 },
+    "current_priorities": { "max_delta_pct": 30 }
+  }
+}

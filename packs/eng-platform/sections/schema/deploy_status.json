@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "required": ["_meta", "data"],
+  "properties": {
+    "_meta": { "type": "object" },
+    "data": {
+      "type": "object",
+      "patternProperties": {
+        "^[a-z0-9_-]+$": {
+          "type": "object",
+          "required": ["version", "status"],
+          "properties": {
+            "version": { "type": "string" },
+            "last_deploy": { "type": "string", "format": "date-time" },
+            "status": { "type": "string", "enum": ["healthy", "degraded", "rolling_back", "failed"] }
+          }
+        }
+      }
+    }
+  }
+}

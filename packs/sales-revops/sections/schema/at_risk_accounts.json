@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "required": ["_meta", "data"],
+  "properties": {
+    "_meta": { "type": "object" },
+    "data": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["company", "risk_factor"],
+        "properties": {
+          "company": { "type": "string" },
+          "arr": { "type": "number" },
+          "owner": { "type": "string" },
+          "risk_factor": { "type": "string" },
+          "next_action": { "type": "string" }
+        }
+      }
+    }
+  }
+}

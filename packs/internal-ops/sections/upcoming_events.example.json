@@ -1,0 +1,11 @@
+{
+  "_meta": {
+    "generated_at": "2026-04-30T14:00:00Z",
+    "valid_until": "2026-05-01T14:00:00Z",
+    "schema_version": "1.0.0"
+  },
+  "data": [
+    { "title": "All-hands", "date": "2026-05-08" },
+    { "title": "Atlas v4 launch", "date": "2026-05-21" }
+  ]
+}

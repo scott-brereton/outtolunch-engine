@@ -1,0 +1,11 @@
+{
+  "_meta": {
+    "generated_at": "2026-04-30T14:00:00Z",
+    "valid_until": "2026-04-30T22:00:00Z",
+    "schema_version": "1.0.0"
+  },
+  "data": [
+    { "name": "atlas_v4_routing", "state": "enabled", "rollout_pct": 100 },
+    { "name": "mobilekit_offline_mode", "state": "ramping", "rollout_pct": 35 }
+  ]
+}

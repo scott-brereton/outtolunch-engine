@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "required": ["_meta", "data"],
+  "properties": {
+    "_meta": { "type": "object" },
+    "data": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["company", "closed_at"],
+        "properties": {
+          "company": { "type": "string" },
+          "arr": { "type": "number" },
+          "owner": { "type": "string" },
+          "closed_at": { "type": "string", "format": "date" },
+          "tier": { "type": "string" }
+        }
+      }
+    }
+  }
+}

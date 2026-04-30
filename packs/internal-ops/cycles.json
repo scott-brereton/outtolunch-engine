@@ -1,0 +1,20 @@
+{
+  "cycles": {
+    "daily": {
+      "description": "Daily refresh; full sweep of stable facts.",
+      "depth": "full",
+      "sections": ["leadership", "people_on_vacation", "recent_hires_departures", "current_priorities", "internal_tool_versions", "corrections", "upcoming_events"]
+    },
+    "hourly_business_hours": {
+      "description": "Active-state refresh during business hours.",
+      "depth": "update",
+      "sections": ["active_incidents", "current_priorities"]
+    },
+    "weekly": {
+      "description": "Weekly verification of slow-moving facts.",
+      "depth": "verify",
+      "sections": ["internal_tool_versions", "corrections"]
+    }
+  },
+  "default_staleness_hours": 24
+}

@@ -1,0 +1,12 @@
+{
+  "_meta": {
+    "generated_at": "2026-04-30T14:00:00Z",
+    "valid_until": "2026-05-01T14:00:00Z",
+    "schema_version": "1.0.0"
+  },
+  "data": [
+    { "title": "Launch Atlas v4 to production", "owner": "Alex Park", "status": "on_track" },
+    { "title": "Q2 enterprise pipeline build", "owner": "Casey Singh", "status": "at_risk" },
+    { "title": "Hire VP Marketing", "owner": "Maya Patel", "status": "on_track" }
+  ]
+}

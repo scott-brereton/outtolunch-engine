@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["_meta"],
+  "properties": {
+    "_meta": {
+      "type": "object",
+      "required": ["generated_at", "valid_until", "pack_name", "schema_version"],
+      "properties": {
+        "generated_at": { "type": "string", "format": "date-time" },
+        "valid_until": { "type": "string", "format": "date-time" },
+        "pack_name": { "type": "string" },
+        "schema_version": { "type": "string" }
+      }
+    },
+    "new_customers": { "type": "array", "items": { "type": "object", "required": ["company"] } },
+    "churned_customers": { "type": "array" },
+    "at_risk_accounts": { "type": "array" },
+    "top_deals_in_flight": { "type": "array" },
+    "quota_attainment": { "type": "object" },
+    "corrections": { "type": "array", "items": { "type": "object", "required": ["wrong", "right"] } }
+  }
+}

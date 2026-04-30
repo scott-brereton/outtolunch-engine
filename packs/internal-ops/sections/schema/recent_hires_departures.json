@@ -1,0 +1,36 @@
+{
+  "type": "object",
+  "required": ["_meta", "data"],
+  "properties": {
+    "_meta": { "type": "object" },
+    "data": {
+      "type": "object",
+      "properties": {
+        "hires": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name"],
+            "properties": {
+              "name": { "type": "string" },
+              "role": { "type": "string" },
+              "started": { "type": "string", "format": "date" }
+            }
+          }
+        },
+        "departures": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name"],
+            "properties": {
+              "name": { "type": "string" },
+              "role": { "type": "string" },
+              "left": { "type": "string", "format": "date" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Internal Ops Briefing",
+  "description": "Current facts about the org for AI agents — leadership, who's out, priorities, incidents.",
+  "confidence_scoring": "disabled",
+  "staleness_hours": 24
+}

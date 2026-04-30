@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "required": ["_meta", "data"],
+  "properties": {
+    "_meta": { "type": "object" },
+    "data": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "return_date"],
+        "properties": {
+          "name": { "type": "string" },
+          "role": { "type": "string" },
+          "return_date": { "type": "string", "format": "date" },
+          "reason": { "type": "string" }
+        }
+      }
+    }
+  }
+}

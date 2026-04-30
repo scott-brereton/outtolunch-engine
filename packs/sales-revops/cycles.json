@@ -1,0 +1,15 @@
+{
+  "cycles": {
+    "daily": {
+      "description": "Daily refresh of pipeline state.",
+      "depth": "full",
+      "sections": ["new_customers", "churned_customers", "top_deals_in_flight", "quota_attainment", "corrections"]
+    },
+    "hourly_business_hours": {
+      "description": "Active-state refresh.",
+      "depth": "update",
+      "sections": ["at_risk_accounts", "top_deals_in_flight"]
+    }
+  },
+  "default_staleness_hours": 12
+}

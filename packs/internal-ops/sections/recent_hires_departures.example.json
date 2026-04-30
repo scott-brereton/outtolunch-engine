@@ -1,0 +1,15 @@
+{
+  "_meta": {
+    "generated_at": "2026-04-30T14:00:00Z",
+    "valid_until": "2026-05-01T14:00:00Z",
+    "schema_version": "1.0.0"
+  },
+  "data": {
+    "hires": [
+      { "name": "Quinn Park", "role": "Senior Backend Eng", "started": "2026-04-15" }
+    ],
+    "departures": [
+      { "name": "Sarah Chen", "role": "CTO", "left": "2026-02-10" }
+    ]
+  }
+}

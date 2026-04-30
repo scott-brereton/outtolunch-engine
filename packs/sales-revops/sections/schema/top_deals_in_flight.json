@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "required": ["_meta", "data"],
+  "properties": {
+    "_meta": { "type": "object" },
+    "data": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["company", "stage"],
+        "properties": {
+          "company": { "type": "string" },
+          "stage": { "type": "string" },
+          "amount": { "type": "number" },
+          "owner": { "type": "string" },
+          "expected_close": { "type": "string", "format": "date" }
+        }
+      }
+    }
+  }
+}

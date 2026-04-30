@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://outtolunch-engine/sections/schema.meta.json",
+  "title": "Section schema meta-schema",
+  "description": "Constraints every pack's sections/schema/<name>.json must satisfy.",
+  "type": "object",
+  "required": ["type", "required", "properties"],
+  "properties": {
+    "type": { "const": "object" },
+    "required": {
+      "type": "array",
+      "contains": { "const": "_meta" },
+      "allOf": [{ "contains": { "const": "data" } }]
+    },
+    "properties": {
+      "type": "object",
+      "required": ["_meta", "data"],
+      "properties": {
+        "_meta": { "type": "object" },
+        "data": {}
+      },
+      "not": {
+        "anyOf": [
+          { "required": ["_pack"] },
+          { "required": ["_integrity"] }
+        ]
+      }
+    }
+  }
+}

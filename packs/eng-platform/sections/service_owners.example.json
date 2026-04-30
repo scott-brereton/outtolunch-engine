@@ -1,0 +1,12 @@
+{
+  "_meta": {
+    "generated_at": "2026-04-30T14:00:00Z",
+    "valid_until": "2026-04-30T22:00:00Z",
+    "schema_version": "1.0.0"
+  },
+  "data": {
+    "atlas-payments": { "team": "Payments", "tech_lead": "Alex Park", "slack_channel": "#atlas-eng" },
+    "auth-proxy": { "team": "Identity", "tech_lead": "Riley Tan", "slack_channel": "#identity" },
+    "mobilekit": { "team": "Mobile", "tech_lead": "Sam Rivera", "slack_channel": "#mobile-sdk" }
+  }
+}

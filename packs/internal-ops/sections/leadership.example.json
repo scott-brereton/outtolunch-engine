@@ -1,0 +1,14 @@
+{
+  "_meta": {
+    "generated_at": "2026-04-30T14:00:00Z",
+    "valid_until": "2026-05-01T14:00:00Z",
+    "schema_version": "1.0.0"
+  },
+  "data": {
+    "ceo": { "name": "Maya Patel", "since": "2024-01-15" },
+    "cfo": { "name": "Jordan Lee", "since": "2025-09-01" },
+    "cto": { "name": "Alex Park", "since": "2026-02-15", "previous": "Sarah Chen" },
+    "vp_engineering": { "name": "Riley Tan", "since": "2025-06-01" },
+    "vp_sales": { "name": "Casey Singh", "since": "2025-11-01" }
+  }
+}

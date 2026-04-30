@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "required": ["_meta"],
+  "properties": {
+    "_meta": { "type": "object" },
+    "note": { "type": "string" }
+  }
+}

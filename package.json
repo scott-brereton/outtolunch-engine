@@ -1,0 +1,34 @@
+{
+  "name": "outtolunch-engine",
+  "version": "0.1.0",
+  "description": "Headless Cloudflare Worker engine for serving a curated, AI-friendly briefing of current facts. Fork it to host your org's internal briefing.",
+  "license": "MIT",
+  "private": false,
+  "type": "module",
+  "scripts": {
+    "bundle-pack": "tsx scripts/bundle-pack.ts",
+    "validate": "tsx scripts/validate.ts",
+    "confidence": "tsx scripts/confidence.ts",
+    "checklist": "tsx scripts/research-checklist.ts",
+    "review": "tsx scripts/review.ts",
+    "test": "vitest run",
+    "predeploy": "npm run bundle-pack && npm run validate",
+    "deploy": "wrangler deploy"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "agents": "^0.10.0",
+    "ajv": "^8.18.0",
+    "ajv-formats": "^3.0.1",
+    "jose": "^6.2.3",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260405.1",
+    "@types/node": "^22.0.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2",
+    "vitest": "^3.0.0",
+    "wrangler": "^4.80.0"
+  }
+}

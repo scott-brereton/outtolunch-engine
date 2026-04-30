@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# Pre-deploy guard: blocks `wrangler deploy` from a stale checkout.
+# Wire this into .claude/settings.json under PreToolUse hooks for the Bash tool
+# matching `wrangler deploy*` (but NOT `wrangler deploy --dry-run*`).
+#
+# Reason: deploying from a stale checkout overwrites the live state with old data.
+# (outtolunch.app got bitten by this on 2026-04-11.)
+
+set -euo pipefail
+
+cmd="$1"
+case "$cmd" in
+  *"--dry-run"*) exit 0 ;;
+esac
+
+git fetch origin main --quiet
+behind=$(git rev-list --count HEAD..origin/main)
+if [ "$behind" -gt 0 ]; then
+  echo "BLOCKED: local main is $behind commits behind origin/main." >&2
+  echo "Run \`git pull origin main\` and retry." >&2
+  exit 2
+fi
+exit 0

@@ -1,0 +1,17 @@
+node_modules/
+.wrangler/
+.DS_Store
+review.html
+.dev.vars
+
+# Forker-supplied active pack — engine ships starter packs in packs/, forker copies one to pack/
+pack/
+
+# Build-time generated pack bundle
+lib/_pack.ts
+
+# Local dry-run/build output
+.tmp-build/
+
+# Forker-supplied wrangler config (engine ships pack/wrangler.toml.example)
+wrangler.toml
